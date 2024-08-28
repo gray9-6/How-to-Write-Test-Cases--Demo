@@ -1,0 +1,25 @@
+#spring.application.name=demo
+
+#spring.datasource.url=jdbc:postgresql://localhost:5432/demo?createTableIfNotExists=true
+#spring.datasource.username=postgres
+#spring.datasource.password=#@incorrect
+#spring.jpa.hibernate.ddl-auto=create
+
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Demo
+    username: postgres
+    password: "#@incorrect"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
